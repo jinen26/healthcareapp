@@ -1,0 +1,147 @@
+body{
+
+    overflow-y: scroll;
+    
+    min-height: 100vh;
+  
+  }
+  .header{
+    background-color:white;
+    position:fixed;
+    width:100%;
+    height:8%;
+    padding:20px 30px;
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .header h1{
+    font-size: 25px;
+    font-weight: 600;
+    color:#03AC13;
+    cursor: pointer;
+  
+  }
+  nav .normal{
+   text-decoration: none;
+  margin: 88px;
+  font-weight: 500;
+  font-size: 20px;
+  color:#3b7d3b;
+  position:relative;
+  }
+  
+  
+   nav .normal::after{
+  content:'';
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:100%;
+  height:3px;
+  background:#3b7d3b;
+  border-radius:5px;
+  transform-origin: right;
+  transform:scaleX(0);
+  transition:transform .5s
+   }
+   nav  .normal:hover{
+    color:#03AC13
+   }
+   nav .normal:hover::after{
+  transform: scaleX(1);
+  background: #03AC13;
+   }
+    .buttonout{
+  text-decoration: none;
+   margin: 88px;
+   font-weight: 500;
+   font-size: 20px;
+   position:relative;
+    width:130px;
+    height:50px;
+    background:transparent;
+    outline:none;
+    border-color: #03AC13 ;
+    border-radius:6px 2px;
+    cursor:pointer;
+    margin-left:40px;
+    transition: .5s;
+    font-weight:500;
+  
+   }
+    .buttonout a{
+    text-decoration: none;
+    color:black;
+  
+   }
+    .buttonout a:hover{
+    color:aliceblue;
+   }
+    .buttonout:hover{
+    background-color: #1dec31ac;
+    border-color:#03AC13;
+   }
+  
+    .buttonin{
+    text-decoration: none;
+   margin: 88px;
+   font-weight: 500;
+   font-size: 20px;
+   position:relative;
+    width:170px;
+    height:50px;
+    background:rgb(255, 196, 0);
+    outline:none;
+    border-radius:6px 2px;
+    cursor:pointer;
+    margin-left:40px;
+    transition: .5s;
+    font-weight:500;
+  
+   }
+    .buttonin a{
+    text-decoration: none;
+    color:#0f8a19;
+   }
+    .buttonin:hover{
+    background-color: rgb(255, 132, 0);
+   }
+  .Home{
+  width:200vh;
+  height:100vh;
+  }
+
+  .welcome{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 15vh;
+    align-items: center;
+    width:100%;
+    gap: 20px;
+   
+  }
+  .welcome img{
+    width:450px;
+    height:400px;
+  
+  }
+  .welcome .text{
+    margin-left:20px;
+  }
+  .welcome h1{
+    color:#029c12;
+  }
+  .welcome{
+    font-weight:500;
+  }
+  .buttons{
+    margin-left: 20px;
+  }
+  .welcome .content{
+    display: flex;
+    flex-direction: column;
+  }
+  
